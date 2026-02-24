@@ -1,7 +1,7 @@
-import 'Person.dart';
+import 'Student.dart';
 
 void main() {
-  Person p1 = Person("nitin", 22);
-  p1.setBalance = -200;
-  print(p1.getBalance);
+  Student s1 = Student();
+  s1.name = "Nitin";
+  print(s1.name);
 }
