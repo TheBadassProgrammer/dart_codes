@@ -24,10 +24,12 @@ void fetchData2() {
   print("doing some other ops");
 }
 
-void fetchData3() async {
+void fetchData3() {
   print("data is loading");
-  String data = await getData();
-  print(data);
+  getData().then((data) {
+    print(data);
+  });
+  print("doing some other ops");
 }
 
 Future<String> getData() async {
